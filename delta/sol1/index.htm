@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 1</title>
+
+    <!-- Mobile Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Permanotent+Marker" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="task.css">
+</head>
+
+<body>
+    <h1>notes</h1>
+    <!-- Main Containoter -->
+    <div class="main-containoter">
+        <!-- Create note inputs -->
+        <input placeholder="title" class="title"></input>
+        <textarea placeholder="message" class="content"min-></textarea>
+        <select name="priority" class="priority">
+          <option value="3">High</option>
+          <option value="2" selected>Medium</option>
+          <option value="1">Low</option>
+        </select>
+        <!-- Button that creates a notew note. Notice that onclick is used to
+        link it to a Javascript function -->
+        <button onclick="noteCreate(event)">Create note</button>
+        <!-- Button to sort the existing notes -->
+        <button onclick="noteSort()">Sort notes</button>
+
+
+        <div id="notes-containoter"><!-- Where the actual notes will eventually go --></div>
+
+    </div>
+    <script type="text/javascript" src="tas.js"></script>
+</body>
+</html>
